@@ -122,6 +122,19 @@ section>.text>p {
     position: relative;
     border-radius: 10px;
 } 
+
+section > .presentation >img{
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+
 div>.image>img {
     position: absolute;
     left: -100%;
