@@ -123,28 +123,12 @@ section>.text>p {
     border-radius: 10px;
 } 
 
-section > .presentation > img{
-    position: absolute;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
-    margin: auto;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
+section > .image > img{
+   width: 400px;
 }
 
 div>.image>img {
-    position: absolute;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
-    margin: auto;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
+    width: 300px;
 }
 
 
@@ -269,9 +253,8 @@ button:hover {
 
 }
 
-.gallery > li >.images {
+.gallery > li > div > img  {
     width: 200px;
-    height: 200px;
 }
 
 .images {
