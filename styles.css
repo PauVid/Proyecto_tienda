@@ -123,7 +123,7 @@ section>.text>p {
     border-radius: 10px;
 } 
 
-section > .presentation >img{
+section > .presentation > img{
     position: absolute;
     left: -100%;
     right: -100%;
