@@ -1,7 +1,9 @@
+console.log('¡Funciona!')
+
 const products = [
   {
-    name: 'Photo 1',
-    price: 2,
+    name: 'Courduroy Country Club Hat',
+    price: 35,
     stars: 4,
     reviews: 250,
     seller: 'Pc Componentes'
