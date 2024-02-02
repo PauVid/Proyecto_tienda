@@ -8,7 +8,7 @@ const products = [
     starts: 4,
     reviews: 250,
     seller: 'PcComponentes',
-    image: 'https://img.pccomponentes.com/articles/1072/10720423/123-asus-rog-strix-g16-g614ji-n3163-intel-core-i7-13650hx-32gb-1tb-ssd-rtx-4070-16.jpg'
+    image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg'
   },
   {
     name: 'HP Essentials 255 G8 AMD',
@@ -16,7 +16,7 @@ const products = [
     starts: 4,
     reviews: 250,
     seller: 'PcComponentes',
-    image: 'https://img.pccomponentes.com/articles/1072/10720423/123-asus-rog-strix-g16-g614ji-n3163-intel-core-i7-13650hx-32gb-1tb-ssd-rtx-4070-16.jpg',
+    image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
   },  
   {
     name: 'HP Essentials 255 G8 AMD',
@@ -24,7 +24,7 @@ const products = [
     starts: 4,
     reviews: 250,
     seller: 'PcComponentes',
-    image: 'https://img.pccomponentes.com/articles/1072/10720423/123-asus-rog-strix-g16-g614ji-n3163-intel-core-i7-13650hx-32gb-1tb-ssd-rtx-4070-16.jpg',
+    image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
   },  
   {
     name: 'HP Essentials 255 G8 AMD',
@@ -32,7 +32,7 @@ const products = [
     starts: 4,
     reviews: 250,
     seller: 'PcComponentes',
-    image: 'https://img.pccomponentes.com/articles/1072/10720423/123-asus-rog-strix-g16-g614ji-n3163-intel-core-i7-13650hx-32gb-1tb-ssd-rtx-4070-16.jpg',
+    image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
   },
   {
     name: 'HP Essentials 255 G8 AMD',
@@ -40,7 +40,7 @@ const products = [
     starts: 4,
     reviews: 250,
     seller: 'PcComponentes',
-    image: 'https://img.pccomponentes.com/articles/1072/10720423/123-asus-rog-strix-g16-g614ji-n3163-intel-core-i7-13650hx-32gb-1tb-ssd-rtx-4070-16.jpg',
+    image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
   },
   {
     name: 'HP Essentials 255 G8 AMD',
@@ -48,7 +48,7 @@ const products = [
     starts: 4,
     reviews: 250,
     seller: 'PcComponentes',
-    image: 'https://img.pccomponentes.com/articles/1072/10720423/123-asus-rog-strix-g16-g614ji-n3163-intel-core-i7-13650hx-32gb-1tb-ssd-rtx-4070-16.jpg',
+    image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
   },
   {
     name: 'HP Essentials 255 G8 AMD',
@@ -56,7 +56,7 @@ const products = [
     starts: 4,
     reviews: 250,
     seller: 'PcComponentes',
-    image: 'https://img.pccomponentes.com/articles/1072/10720423/123-asus-rog-strix-g16-g614ji-n3163-intel-core-i7-13650hx-32gb-1tb-ssd-rtx-4070-16.jpg',
+    image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
   },
   {
     name: 'HP Essentials 255 G8 AMD',
@@ -64,7 +64,7 @@ const products = [
     starts: 4,
     reviews: 250,
     seller: 'PcComponentes',
-    image: 'https://img.pccomponentes.com/articles/1072/10720423/123-asus-rog-strix-g16-g614ji-n3163-intel-core-i7-13650hx-32gb-1tb-ssd-rtx-4070-16.jpg',
+    image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
   },
   {
     name: 'HP Essentials 255 G8 AMD',
@@ -72,7 +72,7 @@ const products = [
     starts: 4,
     reviews: 250,
     seller: 'PcComponentes',
-    image: 'https://img.pccomponentes.com/articles/1072/10720423/123-asus-rog-strix-g16-g614ji-n3163-intel-core-i7-13650hx-32gb-1tb-ssd-rtx-4070-16.jpg',
+    image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
   },
   {
     name: 'HP Essentials 255 G8 AMD',
@@ -80,7 +80,7 @@ const products = [
     starts: 4,
     reviews: 250,
     seller: 'PcComponentes',
-    image: 'https://img.pccomponentes.com/articles/1072/10720423/123-asus-rog-strix-g16-g614ji-n3163-intel-core-i7-13650hx-32gb-1tb-ssd-rtx-4070-16.jpg',
+    image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
   },
 ];
 
@@ -93,60 +93,91 @@ const printProductList = () => {
 
     for (const product of products){
 
-      const productName = document.createElement("h3");
-      const productPrice = document.createElement("p");
+      const ulCards = document.createElement("ul");
+      ulCards.classList.add("cards");
+
+      const liCard = document.createElement("li");
+
+      const aCard = document.createElement("a");
+      aCard.classList.add("card");
+
+      const imgCard = document.createElement("img");
+      imgCard.classList.add("card__image");
+
+      const divCardOverlay = document.createElement("div");
+      divCardOverlay.classList.add("card__overlay");
+
+      const divCardHeader = document.createElement("div");
+      divCardHeader.classList.add("card__header");
+
+      const pCardDescription = document.createElement("p");
+      pCardDescription.classList.add("card__description");
+
+      const svgCardArc = document.createElement("svg");
+      svgCardArc.classList.add("card__arc");
+
+      const divCardHeaderText = document.createElement("div");
+      divCardHeaderText.classList.add("card__header-text");
+
+      const h3CardTitle = document.createElement("h3");
+      h3CardTitle.classList.add("card__title");
+
+      const spanCardStatus = document.createElement("span");
+      spanCardStatus.classList.add("card__status");
+
       const productStars = document.createElement("img");
-      const productReviews = document.createElement("p");
-      const productSeller = document.createElement("p");
-      const productImage = document.createElement("img");
-      const divInfo = document.createElement("div");
-      const divProduct = document.createElement("div");
-      const divImage = document.createElement("div");
-      const divInfoElm = document.createElement("div");
+      productStars.classList.add("card__stars");
+
+      const productReviews = document.createElement("img");
+      productReviews.classList.add("card__reviews");
+
+      const productReviewsText = document.createElement("p");
+      productReviewsText.classList.add("card__reviews__text");
+
+      const divProductDescription = document.createElement("div");
+      divProductDescription.classList.add("div__description");
+
+      const divtDescriptionShow = document.createElement("div");
+      divtDescriptionShow.classList.add("div__show");
+
+      aCard.href = "#";
+      imgCard.src = product.image;
+      h3CardTitle.textContent = product.name;
+      spanCardStatus.textContent = `PVP: ${product.price}€`;
+      svgCardArc.src = "https://www.w3.org/2000/svg";
+      pCardDescription.textContent = product.seller;
+      productStars.src = "./Assets/clasificacion.png";
+      productReviews.src = "./Assets/comentarios.png";
+      productReviewsText.textContent = product.reviews;
+
+      // name: 'HP Essentials 255 G8 AMD',
+      // price: 289,
+      // starts: 4,
+      // reviews: 250,
+      // seller: 'PcComponentes',
+      // image: 'https://img.pccomponentes.com/articles/1072/10720423/123-asus-rog-strix-g16-g614ji-n3163-intel-core-i7-13650hx-32gb-1tb-ssd-rtx-4070-16.jpg',
 
 
 
-      productName.textContent = product.name;
-      productName.classList.add("product-name");
-      productPrice.textContent = product.price;
-      productPrice.classList.add("product-price");
-      productStars.src = product.starts;
-      productStars.classList.add("product-stars");
-      productReviews.textContent = product.reviews;
-      productReviews.classList.add("product-reviews");
-      productSeller.textContent = product.seller;
-      productSeller.classList.add("seller-name");
-      productImage.src = product.image;
-      productImage.classList.add("product-image");
+      ulCards.append(liCard);
+      liCard.append(aCard);
+      aCard.append(imgCard);
+      aCard.append(divCardOverlay);
+      divCardOverlay.append(divCardHeader);
+      divCardOverlay.append(divProductDescription);
+      divProductDescription.append(pCardDescription);
+      divtDescriptionShow.append(productStars);
+      divtDescriptionShow.append(productReviews);
+      divtDescriptionShow.append(productReviewsText);
+      divProductDescription.append(divtDescriptionShow);
+      divCardHeader.append(svgCardArc);
+      divCardHeader.append(divCardHeaderText);
+      divCardHeaderText.append(h3CardTitle);
+      divCardHeaderText.append(spanCardStatus);
 
-      
-      
-      divInfo.append(productName);
-      divInfo.append(productPrice);
-      divInfoElm.append(productStars);
-      divInfoElm.append(productReviews);
-      divInfoElm.append(productSeller);
-      divInfo.classList.add("product-info");
-      divInfoElm.classList.add("product-elements");
-
-      divImage.append(productImage);
-      divImage.classList.add("product-image");
-
-
-      
-
-      divProduct.append(divImage);
-      divProduct.append(divInfo);
-      divProduct.append(divInfoElm);
-      divProduct.classList.add("product");
-
-      productSection.append(divProduct);
-      productSection.classList.add("product-section");
+      productSection.append(ulCards);
 
     };
 };
 
 printProductList();
-
-
-
