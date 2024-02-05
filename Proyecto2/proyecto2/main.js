@@ -181,3 +181,25 @@ const printProductList = () => {
 };
 
 printProductList();
+
+
+// Creamos los filtros
+
+const filterOptions = () => {
+
+  const opciones = products.name; // undefined
+  console.log(opciones);
+
+  for(let i = 0; i < products.length; i++){
+    const options = document.querySelector("select");
+    const option = document.createElement("option");
+    option.textContent = "options";
+  
+    options.append(option);
+
+  }
+
+  //Falta llegir els noms dels sellers
+}
+
+filterOptions()
