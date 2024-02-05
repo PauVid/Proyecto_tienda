@@ -6,7 +6,7 @@ const products = [
     name: 'HP Essentials 255 G8 AMD',
     price: 289,
     starts: 4,
-    reviews: 250,
+    reviews: 2504,
     seller: 'PcComponentes',
     image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg'
   },
@@ -14,8 +14,16 @@ const products = [
     name: 'HP Essentials 255 G8 AMD',
     price: 289,
     starts: 4,
-    reviews: 250,
-    seller: 'PcComponentes',
+    reviews: 2250,
+    seller: 'Agustín',
+    image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
+  },  
+  {
+    name: 'HP Essentials 255 G8 AMD',
+    price: 289,
+    starts: 4,
+    reviews: 25,
+    seller: 'Julián',
     image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
   },  
   {
@@ -23,15 +31,7 @@ const products = [
     price: 289,
     starts: 4,
     reviews: 250,
-    seller: 'PcComponentes',
-    image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
-  },  
-  {
-    name: 'HP Essentials 255 G8 AMD',
-    price: 289,
-    starts: 4,
-    reviews: 250,
-    seller: 'PcComponentes',
+    seller: 'Agustín',
     image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
   },
   {
@@ -55,7 +55,15 @@ const products = [
     price: 289,
     starts: 4,
     reviews: 250,
-    seller: 'PcComponentes',
+    seller: 'Julián',
+    image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
+  },
+  {
+    name: 'HP Essentials 255 G8 AMD',
+    price: 289,
+    starts: 4,
+    reviews: 250,
+    seller: 'Agustín',
     image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
   },
   {
@@ -71,19 +79,16 @@ const products = [
     price: 289,
     starts: 4,
     reviews: 250,
-    seller: 'PcComponentes',
-    image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
-  },
-  {
-    name: 'HP Essentials 255 G8 AMD',
-    price: 289,
-    starts: 4,
-    reviews: 250,
-    seller: 'PcComponentes',
+    seller: 'Julián',
     image: 'https://img.pccomponentes.com/pcblog/1691618400000/768x504-ordenadores-2.jpg',
   },
 ];
 
+// function prueba() {
+//   console.log(products[3].seller);
+// }
+
+// prueba()
 
 // Creamos los elementos e importamos los productos 
 
@@ -191,7 +196,23 @@ const filterOptions = () => {
   for(let i = 0; i < products.length; i++){
     const options = document.querySelector("select");
     const option = document.createElement("option");
-      options.append(option);
+    options.append(option);
+
+    // const optionsContent = [...new Set(products[i].seller)];
+
+    let optionsContent = products.seller.filter((element, index) => {
+      return products.indexOf(element) === index;
+    });
+    // option.textContent = products[i].seller;
+    option.textContent = optionsContent;
+
+      // const filterContent = () => {
+      //   filterContent.textContent = products[i].seller
+
+      //   filterContent.filter((value, index) => option.indexOf(value) === index);
+      // }  
+
+      // filterContent()
 
   };
   // Falta leer los nombres de los vendedores
