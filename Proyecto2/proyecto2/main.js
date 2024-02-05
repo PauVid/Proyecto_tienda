@@ -183,23 +183,19 @@ const printProductList = () => {
 printProductList();
 
 
+
 // Creamos los filtros
 
 const filterOptions = () => {
-
-  const opciones = products.name; // undefined
-  console.log(opciones);
-
+  
   for(let i = 0; i < products.length; i++){
     const options = document.querySelector("select");
     const option = document.createElement("option");
-    option.textContent = "options";
-  
-    options.append(option);
+      options.append(option);
 
-  }
-
-  //Falta llegir els noms dels sellers
-}
+  };
+  // Falta leer los nombres de los vendedores
+  // Si el nombre del vendedor === nombre de la opción pintalo, else no lo pintes.
+};
 
 filterOptions()
