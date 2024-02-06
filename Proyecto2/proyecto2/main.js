@@ -191,6 +191,9 @@ printProductList();
 
 // Creamos los filtros
 
+const filtros = products.filter((product) => products.seller === products.seller)
+
+
 const filterOptions = () => {
   
   for(let i = 0; i < products.length; i++){
