@@ -84,12 +84,6 @@ const products = [
   },
 ];
 
-// function prueba() {
-//   console.log(products[3].seller);
-// }
-
-// prueba()
-
 // Creamos los elementos e importamos los productos 
 
 const printProductList = () => {
@@ -191,8 +185,7 @@ printProductList();
 
 // Creamos los filtros
 
-const filtros = products.filter((product) => products.seller === products.seller)
-
+const result = vendedores.filter((product) => products.seller !== products.seller);
 
 const filterOptions = () => {
   
@@ -200,26 +193,9 @@ const filterOptions = () => {
     const options = document.querySelector("select");
     const option = document.createElement("option");
     options.append(option);
-
-    // const optionsContent = [...new Set(products[i].seller)];
-
-    let optionsContent = products.seller.filter((element, index) => {
-      return products.indexOf(element) === index;
-    });
-    // option.textContent = products[i].seller;
-    option.textContent = optionsContent;
-
-      // const filterContent = () => {
-      //   filterContent.textContent = products[i].seller
-
-      //   filterContent.filter((value, index) => option.indexOf(value) === index);
-      // }  
-
-      // filterContent()
-
+    option.textContent = result;
   };
   // Falta leer los nombres de los vendedores
-  // Si el nombre del vendedor === nombre de la opción pintalo, else no lo pintes.
 };
 
 filterOptions()
