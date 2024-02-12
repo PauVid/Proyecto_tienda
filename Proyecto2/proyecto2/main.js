@@ -185,17 +185,17 @@ printProductList();
 
 // Creamos los filtros
 
-const result = vendedores.filter((product) => products.seller !== products.seller);
+// const result = vendedores.filter((product) => products.seller !== products.seller);
 
-const filterOptions = () => {
+// const filterOptions = () => {
   
-  for(let i = 0; i < products.length; i++){
-    const options = document.querySelector("select");
-    const option = document.createElement("option");
-    options.append(option);
-    option.textContent = result;
-  };
-  // Falta leer los nombres de los vendedores
-};
+//   for(let i = 0; i < products.length; i++){
+//     const options = document.querySelector("select");
+//     const option = document.createElement("option");
+//     options.append(option);
+//     option.textContent = result;
+//   };
+//   // Falta leer los nombres de los vendedores
+// };
 
-filterOptions()
+// filterOptions()
