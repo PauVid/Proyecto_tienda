@@ -94,48 +94,33 @@ const printProductList = () => {
 
       const ulCards = document.createElement("ul");
       ulCards.classList.add("cards");
-
       const liCard = document.createElement("li");
-
       const aCard = document.createElement("a");
       aCard.classList.add("card");
-
       const imgCard = document.createElement("img");
       imgCard.classList.add("card__image");
-
       const divCardOverlay = document.createElement("div");
       divCardOverlay.classList.add("card__overlay");
-
       const divCardHeader = document.createElement("div");
       divCardHeader.classList.add("card__header");
-
       const pCardDescription = document.createElement("p");
       pCardDescription.classList.add("card__description");
-
       const svgCardArc = document.createElement("svg");
       svgCardArc.classList.add("card__arc");
-
       const divCardHeaderText = document.createElement("div");
       divCardHeaderText.classList.add("card__header-text");
-
       const h3CardTitle = document.createElement("h3");
       h3CardTitle.classList.add("card__title");
-
       const spanCardStatus = document.createElement("span");
       spanCardStatus.classList.add("card__status");
-
       const productStars = document.createElement("img");
       productStars.classList.add("card__stars");
-
       const productReviews = document.createElement("img");
       productReviews.classList.add("card__reviews");
-
       const productReviewsText = document.createElement("p");
       productReviewsText.classList.add("card__reviews__text");
-
       const divProductDescription = document.createElement("div");
       divProductDescription.classList.add("div__description");
-
       const divtDescriptionShow = document.createElement("div");
       divtDescriptionShow.classList.add("div__show");
 
@@ -175,6 +160,7 @@ const printProductList = () => {
       divCardHeaderText.append(spanCardStatus);
 
       productSection.append(ulCards);
+
 
     };
 };
